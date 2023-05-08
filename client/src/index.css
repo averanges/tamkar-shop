@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.MuiSlider-thumb:hover {
+  box-shadow: none;
+}
+@keyframes slide-in {
+    0% {
+      transform: scaleX(-1);
+    }
+    50% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(-1);
+    }
+  }
+  @keyframes opacity-effect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes over-effect {
+    0%{
+      opacity: 0;
+      transform: translateY(15rem);
+      transform: translateX(15rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(15rem);
+      transform: translateX(15rem);
+    }
+  }
+@tailwind utilities;

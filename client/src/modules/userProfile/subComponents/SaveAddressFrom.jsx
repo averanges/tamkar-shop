@@ -6,7 +6,6 @@ import { useSaveAddressMutation } from '../../../services/userApiQuery'
 
 const SaveAddressFrom = () => {
     const [mutation, {data}] = useSaveAddressMutation()
-    console.log(data)
     const token = useSelector(state => state.user.authToken)
     const dispatch = useDispatch()
     const [shippingData, setShippingData] = useState({

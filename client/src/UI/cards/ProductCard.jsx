@@ -19,7 +19,7 @@ const handleOnLoad = () => {
     setImagesLoaded(true)
 }
   return (
-    <div className='flex flex-col hover:shadow-xl p-5 justify-end' >
+    <div className='flex flex-col hover:shadow-xl p-5 justify-end h-fit' >
             <div className='rounded-2xl cursor-pointer group/change relative'>
                 {isNew && <span className='text-white bg-bs-orange w-fit h-fit rounded-2xl py-1 px-5 absolute top-1 right-1 md:top-5 md:right-5'>New</span>}
                 <Link to={`/shop/${categoriesId}/${linkTitle}`} onClick={() => dispatch(chooseToOpenProductId(_id))} 

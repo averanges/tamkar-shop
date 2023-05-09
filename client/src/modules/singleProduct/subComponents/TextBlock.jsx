@@ -11,7 +11,7 @@ const TextBlock = ({data, id}) => {
     
   return (
     <div className='flex-1 flex justify-center items-center'>
-    <div className='w-[90%] h-full flex flex-col gap-5'>
+    <div className='w-[90%] h-fit flex flex-col gap-5'>
         <div className='flex flex-col gap-7 border-b-[1px] border-gray-300'>
             <div className='flex justify-center md:justify-start'>
                 <p className={`text-lg text-new-pink duration-1000 ${data?.brand ? 'opacity-100' : 'opacity-0'}`}>

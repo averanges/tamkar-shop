@@ -23,7 +23,8 @@ const HeroSlide = () => {
                 <div className='relative w-3/5 h-3/5 flex lg:justify-center flex-col gap-3 lg:gap-5'>
                     <h1 className={`lg:text-[14rem] md:text-9xl text-6xl font-heroH1 text-bs-pink flex items-center w-fit  ${homeImgObserved ? 'translate-x-0 opacity-100' : '-translate-x-40 opacity-0'} duration-[1.3s] delay-1000`}>Best</h1>
                     <h2 ref={navChangeRef} className={`text-3xl md:text-5xl lg:text-7xl font-medium absolute font-heroH2 tracking-widest top-[10%] md:top-[25%] lg:top-[40%] xl:top-[45%] ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.3s]`}>skin care</h2>
-                    <p className={`text-sm md:text-base lg:text-lg mt-5 ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.4s]`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto similique laudantium a dolores quod!</p>
+                    <p className={`text-sm md:text-base lg:text-lg mt-5 ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.4s]`}>
+                    Get the best skincare products and unlock a flawless complexion with our premium collection.</p>
                     <button 
                     className={` lg:py-2 border-2 border-solid border-black rounded-full w-24 lg:w-48  bg-white hover:bg-bs-orange  ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.5s] }`}>
                         Buy now</button>

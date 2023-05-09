@@ -6,7 +6,7 @@ import adminRoutes from "./routes/adminRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 import passport from "passport"
 import authRoutes from "./routes/authRoutes.js"
-import paymentRoutes from "./routes/paymentRoutes.js"
+// import paymentRoutes from "./routes/paymentRoutes.js"
 dotenv.config()
 
 const app = express()
@@ -19,7 +19,7 @@ app.use(cors({
 }))
 app.use(express.json())
 
-app.use('/payment', paymentRoutes)
+// app.use('/payment', paymentRoutes)
 app.use('/admin', adminRoutes)
 app.use('/auth', authRoutes)
 app.use('/', userRoutes)

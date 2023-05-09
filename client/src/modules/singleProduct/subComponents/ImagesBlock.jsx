@@ -6,14 +6,14 @@ const ImagesBlock = ({data, chosenImg, setChosenImg}) => {
         className={`cursor-pointer ${data?.mainImg === el && 'border-[1px] border-black'}`} src={el} 
         onClick={() => setChosenImg(el)}/>)
   return (
-    <div className='flex-1 flex justify-center items-center'>
+    <div className='flex-1 flex justify-center items-center w-full h-full'>
     {(data?.additionalImages && data?.additionalImages?.length > 1)  && 
     <div className={`flex flex-col gap-5 w-[10%] justify-center duration-1000 
     ${chosenImg ? 'opacity-100' : 'opacity-0'}`}>
         {mappedImages}
     </div>}
     <div className='flex justify-center w-[90%] h-full rounded-lg'>
-        <div className='w-[90%] h-[384px] md:max-h-[500px] relative justify-center'>
+        <div className='w-[90%] relative justify-center'>
             <img src={chosenImg} alt="" 
             className={`w-full max-sm:absolute top-0 left-0 max-sm:bg-cover max-sm:h-full duration-1000 ${chosenImg ? 'opacity-100' : 'opacity-0'}`}/>
            {(data.additionalImages.length > 1) &&

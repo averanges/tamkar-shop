@@ -10,7 +10,7 @@ const TextBlock = ({data, id}) => {
     const allCardData = useSelector(state => state.user.allCardData)
     
   return (
-    <div className='flex-1 flex justify-center items-center'>
+    <div className='flex-1 flex justify-center items-center text-center md:text-left'>
     <div className='w-[90%] h-fit flex flex-col gap-5'>
         <div className='flex flex-col gap-7 border-b-[1px] border-gray-300'>
             <div className='flex justify-center md:justify-start'>
@@ -31,7 +31,7 @@ const TextBlock = ({data, id}) => {
                 {data?.descr}
             </p>
             <div className='flex justify-center md:justify-start'>
-                <div className='mb-10 border-2 border-new-pink rounded-full w-2/6 md:w-4/12 h-12 items-center flex justify-between'>
+                <div className='mb-10 border-2 border-new-pink rounded-full w-2/6 md:w-3/12 h-12 items-center flex justify-between'>
                     <span className='text-4xl flex justify-center flex-1 h-4/5 items-center border-r-[1px] border-gray-300 cursor-pointer'
                     onClick={() => setChosenAmount(prev => prev === 1 ? prev : prev -= 1)}>-</span>
                     <span className='text-2xl flex-1 flex justify-center h-4/5 items-center border-r-[1px] border-gray-300'>{chosenAmount}</span>

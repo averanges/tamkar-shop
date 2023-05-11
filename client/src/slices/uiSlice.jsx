@@ -44,7 +44,6 @@ const uiSlice = createSlice({
             checkBody(action.payload)
         },
         openAddToCart: (state, action) => {
-            console.log(action.payload)
             state.addToCartData = action.payload
             checkBody(action?.payload?.open)
         },

@@ -8,6 +8,10 @@ class userController {
         const allItems = await itemModel.find({mainCategory: category })
         return res.json(allItems)
         }
+        if(category === 'NEW' || category === 'NEW HOME'){
+            const allItems = await itemModel.find({isNewItem: true })
+            return res.json(allItems)
+            }
         if(category === 'SALES' || category === 'SALES HOME'){
             const allItems = await itemModel.find({isSale: true})
             return res.json(allItems)

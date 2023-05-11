@@ -15,7 +15,7 @@ const ImagesBlock = ({data, chosenImg, setChosenImg}) => {
     <div className='flex justify-center w-[90%] h-full rounded-lg'>
         <div className='w-[90%] relative justify-center'>
             <img src={chosenImg} alt="" 
-            className={`w-full max-sm:absolute top-0 left-0 max-sm:bg-cover max-sm:h-full duration-1000 ${chosenImg ? 'opacity-100' : 'opacity-0'}`}/>
+            className={`w-full md:bg-cover md:h-full duration-1000 ${chosenImg ? 'opacity-100' : 'opacity-0'}`}/>
            {(data.additionalImages.length > 1) &&
            (<>
             <div onClick={() => setChosenImg(data?.additionalImages?.indexOf(chosenImg) === 0 ? data.additionalImages[data?.additionalImages.length - 1] : data.additionalImages[data.additionalImages.indexOf(chosenImg) - 1])}

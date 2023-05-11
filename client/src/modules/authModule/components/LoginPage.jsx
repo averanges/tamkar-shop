@@ -8,18 +8,18 @@ const LoginPage = () => {
     const handleCallback = (response) => {
         const token = response.credential
         // sendToken(token)
-        console.log(token)
+        // console.log(token)
     }
-    useEffect(() => {
-        google.accounts.id.initialize({
-            client_id: '708577863350-li3dauj3bmeudjtlac00o98jt6sc7tc4.apps.googleusercontent.com',
-            callback: handleCallback
-        })
-        google.accounts.id.renderButton(
-            document.getElementById('signInDiv'),
-            {theme: 'outline', size: 'large'}
-        )
-    },[])
+    // useEffect(() => {
+    //     google.accounts.id.initialize({
+    //         client_id: '708577863350-li3dauj3bmeudjtlac00o98jt6sc7tc4.apps.googleusercontent.com',
+    //         callback: handleCallback
+    //     })
+    //     google.accounts.id.renderButton(
+    //         document.getElementById('signInDiv'),
+    //         {theme: 'outline', size: 'large'}
+    //     )
+    // },[])
   return (
     <div className='flex flex-col gap-20'>
         <div className=' flex justify-center mt-20'>
@@ -33,9 +33,9 @@ const LoginPage = () => {
                     buttonText="HEY LOGIN PLEASE"
                     onSuccess={(response) => console.log(response)}
                     /> */}
-                    <div className='flex justify-center items-center'>
+                    {/* <div className='flex justify-center items-center'>
                         <h5 className='text-gray-500'>or</h5>
-                    </div>
+                    </div> */}
                 <div className='flex justify-center'>
                     <h2>Please enter your email and password: </h2>
                 </div>

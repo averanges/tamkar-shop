@@ -14,7 +14,7 @@ const CartPage = () => {
         setRandonColor(getRandomColor())
     },[])
   return (
-    <div className='flex flex-col gap-20 items-center'>
+    <div className='flex flex-col gap-20 items-center mt-20 md:mt-0'>
             <div style={{backgroundColor: randomColor}} 
             className='mt-20 border-gray-300 shadow-inner border-[1px] w-full h-40 hidden md:flex justify-center items-center'>
                 <div className='w-[80%]'>

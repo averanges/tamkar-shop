@@ -21,16 +21,15 @@ const handleOnLoad = () => {
 }
 const handleAddToCardPopup = () => {
     dispatch(addToCard(fecthCardId))
-    dispatch(openAddToCart({open: true, img}))
+    dispatch(openAddToCart({open: true, img, title}))
 }
   return (
     <div className='flex flex-col hover:shadow-xl p-5 justify-end h-fit min-h-[500px] max-h-[500px]' >
             <div className='rounded-2xl cursor-pointer group/change relative'>
-                {isNew && <span className='text-white bg-bs-orange w-fit h-fit rounded-2xl py-1 px-5 absolute top-1 right-1 md:top-5 md:right-5'>New</span>}
                 <Link to={`/shop/${categoriesId}/${linkTitle}`} onClick={() => dispatch(chooseToOpenProductId(_id))} 
                 className='flex justify-center items-center'>
                     <img className=' duration-500 bg-cover w-full' onLoad={() => location !== '/' && handleOnLoad()}
-                    src={img} alt="" style={{backgroundColor: color && color}}/>  
+                    src={img} alt=""/>  
                 </Link>
                 <div className='hidden md:flex justify-around items-center w-full absolute bottom-4 lg:bottom-[10%] translate-y-[50%] opacity-0 group-hover/change:translate-y-0 group-hover/change:opacity-100 duration-500 ease-linear'>
                     <div onClick={() => dispatch(openQuickView({open: true, _id}))}
@@ -43,7 +42,7 @@ const handleAddToCardPopup = () => {
                     className=' border-2 border-solid border-bs-orange rounded-full w-[50%] h-10 bg-white flex justify-center items-center'>
                         <p className='text-sm'>Add to cart</p>
                     </div>
-                    <div  onClick={() => dispatch(openAddToWishList({open: true, img}))}
+                    <div  onClick={() => dispatch(openAddToWishList({open: true, img, title}))}
                     className=' border-2 border-solid border-bs-orange rounded-full w-10 h-10  bg-white flex justify-center items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-7 h-7">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
@@ -52,8 +51,9 @@ const handleAddToCardPopup = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-2 mt-3 items-center'>
-                <div className='flex justify-center w-full'>
-                    <p className='text-sm text-new-pink italic'>{brand}</p>
+                <div className={`flex justify-center w-full relative ${isNew && 'flex-col md:flex-row'}`}>
+                    <p className='text-sm md:text-base text-new-pink italic'>{brand}</p>
+                    {isNew && <span className='w-fit bg-new-pink rounded-full px-2 text-white absolute top-0 right-0 text-sm'>NEW</span>}
                 </div>
                 <h2 className='text-lg cursor-pointer hover:text-bs-orange duration-500 w-full text-center'>{title}</h2>
                 <div className='flex gap-5 items-center'>

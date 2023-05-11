@@ -28,7 +28,7 @@ const TextBlock = ({data, id}) => {
                 <p className='italic text-sm text-gray-400'>150 reviews</p>
             </div>
             <p className={`text-base duration-1000 ${data?.descr ? 'opacity-100' : 'opacity-0'}`}>
-            {data?.descr}
+                {data?.descr}
             </p>
             <div className='flex justify-center md:justify-start'>
                 <div className='mb-10 border-2 border-new-pink rounded-full w-2/6 md:w-4/12 h-12 items-center flex justify-between'>

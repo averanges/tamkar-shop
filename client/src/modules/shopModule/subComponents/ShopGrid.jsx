@@ -9,8 +9,8 @@ const ShopGrid = ({category, allData, setImagesLoaded, gridImagesLoading, setGri
   {/* ${gridImagesLoading ? 'opacity-100' : 'opacity-0'} */}
     <div className={`flex flex-col items-center gap-14 duration-1000 `}>
         <div className='w-full flex-2 min-h-screen'>
-            <div className='grid grid-cols-2 lg:grid-cols-4'>
-            {allItems}
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-10'>
+                {allItems}
             </div>
         </div>
     <div className='flex gap-5 border-2 border-new-pink rounded-full justify-center h-12 items-center px-3'>

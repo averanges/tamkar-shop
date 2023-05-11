@@ -9,9 +9,6 @@ const AddToWishList = () => {
     const {openLayer , move} = usePopupOpen(open)
     const dispatch = useDispatch()
 
-    const colors = ['#DCFFD2','#FFEDB4','#DFE4FF','#FFEACC','#FFDAE0','#FFF3DA']
-    const random = Math.floor(Math.random() * colors.length)
-
   return (
     <div className={` ${openLayer ? 'flex justify-center items-center bg-[rgba(0,0,0,0.6)] fixed z-20 w-screen h-screen' : 'hidden'} `}>
         <div className={`bg-white flex justify-center w-96 lg:w-[35%] rounded-lg flex-col items-center gap-5 pb-5 duration-300 ${move ? 'translate-y-0 opacity-100' : '-translate-y-[30%] opacity-0'}`}>
@@ -30,7 +27,7 @@ const AddToWishList = () => {
                 </div>
                 <p>Added to wish list successfully!</p>
             </div>
-            <div className='w-[90%] flex justify-center' style={{backgroundColor: move ? colors[random] : null}}>
+            <div className='w-[90%] flex justify-center'>
                 <img className='h-80' src={img} alt="" />
             </div>
             <h2 className='text-xl'>Readable content DX22</h2>

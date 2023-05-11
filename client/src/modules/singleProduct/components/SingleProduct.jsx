@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import Cards from '../../../UI/cards/Cards'
 import { useGetSingleProductQuery } from '../../../services/userApiQuery'
 import { useMainImg } from '../hooks/useMainImg'
-import ProductLocation from '../subComponents/productLocation'
 import ImagesBlock from '../subComponents/ImagesBlock'
 import TextBlock from '../subComponents/TextBlock'
 import ReviewBlock from '../subComponents/ReviewBlock'
@@ -37,17 +35,12 @@ const SingleProduct = () => {
            <TextBlock data={data} id={_id ? _id : idInSession}/>
         </div>
             <div className='flex flex-col justify-center w-[90%] h-full gap-20 items-center'>
-                { !reveiwOpened ?
+                {/* { !reveiwOpened ?
                     <AdditionalInfoBlock data={data} setReviewOpened={setReviewOpened}/>
                     :
                     <ReviewBlock setReviewOpened={setReviewOpened}/>
-                }
-                <div className='flex justify-center'>
-                    <h4 className='text-4xl'>Viewed Products</h4>
-                </div>
-                <div className='grid md:grid-flow-col'>
-               
-                </div>
+                } */}
+                <AdditionalInfoBlock data={data} setReviewOpened={setReviewOpened}/>
             </div>
             </>
     )

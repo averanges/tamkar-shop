@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { getAllItems, getSingleProduct } from "../services/userServices"
 
 const token = JSON.parse(localStorage.getItem('AC'))
 const localCardIds = localStorage.getItem('CAI')
@@ -75,14 +74,6 @@ const userSlice = createSlice({
             }
         }
     },
-    extraReducers: {
-        [getAllItems.fulfilled] : (state, action) => {
-            state.allItemsData = action.payload
-        },
-        [getSingleProduct.fulfilled] : (state, action) => {
-            state.openProductData = action.payload
-        }
-    }
 })
 
 export const {addProductDat, chooseToOpenProductId, addToCard, changeAddToCardAmount, logout, login} = userSlice.actions

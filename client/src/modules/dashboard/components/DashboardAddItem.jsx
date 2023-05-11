@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { addNewItem } from '../../../services/adminServices'
 import { useAddNewItemMutation } from '../../../services/adminApiQuery'
 
 const DashboardAddItem = () => {

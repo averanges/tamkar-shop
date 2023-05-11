@@ -8,8 +8,8 @@ const AdditionalInfoBlock = ({data, setReviewOpened}) => {
         <div className='flex gap-10'>
             <h2 onClick={() => setReviewOpened(false)}
             className='text-xl cursor-pointer text-new-pink duration-500'>DESCRIPTION</h2>
-            <h2 onClick={() => setReviewOpened(true)}
-            className='text-xl cursor-pointer hover:text-new-pink duration-500'>REVIEWS</h2>
+            {/* <h2 onClick={() => setReviewOpened(true)}
+            className='text-xl cursor-pointer hover:text-new-pink duration-500'>REVIEWS</h2> */}
         </div>
         <div className='grid w-full md:grid-cols-2 gap-x-7'>
             {infoTypes}

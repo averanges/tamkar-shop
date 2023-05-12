@@ -14,7 +14,7 @@ const app = express()
 app.use(passport.initialize())
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://tamkar-beauty.onrender.com',
     credentials: true
 }))
 app.use(express.json())

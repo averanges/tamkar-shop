@@ -4,11 +4,13 @@ import userService from "../services/userService.js"
 class userController {
     getAllItems = async (req, res) => {
         const {category} = req.query
+        console.log(category)
         if(category === 'HAIR CARE'){
         const allItems = await itemModel.find({mainCategory: category })
         return res.json(allItems)
         }
         if(category === 'NEW' || category === 'NEW HOME'){
+            console.log(1)
             const allItems = await itemModel.find({isNewItem: true })
             return res.json(allItems)
             }

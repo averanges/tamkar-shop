@@ -3,7 +3,7 @@ import PaymentForm from './PaymentForm'
 
 const CheckoutOrder = ({data}) => {
     const subTotal = data && data.length > 0 && data?.map(el => el.price * el.chosenAmount)?.reduce((el,acc) => acc+el)
-    const finalAmount = data?.map(el => el.chosenAmount).reduce((acc, el) => acc + el)
+    // const finalAmount = data?.map(el => el.chosenAmount).reduce((acc, el) => acc + el)
     const shippingPrice = 0
     const items = data?.map((el, idx) => 
     <div key={idx} className='flex justify-between'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/Logo.png'
 
 const arr = ['Blog','Privacy','My Account','About us','Login','FAQs', 'Contact', 'Shop'].map((el, idx) => 
     <p className='cursor-pointer hover:text-bs-orange' key={idx}>{el}</p>)
@@ -7,13 +7,15 @@ const arr = ['Blog','Privacy','My Account','About us','Login','FAQs', 'Contact',
 const Footer = () => {
   return (
     <div className='bg-home-gray w-full h-96 mt-20 flex justify-around items-center gap-10 px-10 text-gray-600  '>
-        <div className='flex-1 gap-10 flex flex-col ml-16'>
+        <div className='flex-1 gap-10 flex flex-col ml-16 hidden md:block'>
             <img src={Logo} alt="" className='w-4/6' />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ad quae vel ipsa est</p>
+            <p className='hidden md:inline md:text-sm lg:text-base'>The No.1 Digital Destination for
+                all things K-beauty - Shopping,
+                Lifestyles & Trends</p>
         </div>
         <div className='flex-1 gap-10 flex flex-col ml-20'>
             <h2 className='text-xl font-semibold text-black'>Information</h2>
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid grid-cols-3 gap-5 text-sm md:text-base'>
                 {arr}
             </div>
         </div>

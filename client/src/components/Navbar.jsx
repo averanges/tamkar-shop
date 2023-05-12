@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import Logo from '../assets/Logo.png'
 import { useSelector } from 'react-redux'
 import NavButtons from '../UI/navButtons/NavButtons'

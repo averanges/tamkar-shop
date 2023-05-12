@@ -7,7 +7,7 @@ import { getRandomColor } from '../../../globalHelpers/getRandomColor'
 
 const CheckoutPage = () => {
     const allCardData = useSelector(state => state.user.allCardData)
-    const {data, error, isLoading} = useGetAddedCardQuery(allCardData)
+    const {data} = useGetAddedCardQuery(allCardData)
     const [randomColor, setRandonColor] = useState('#FFEDB4')
     useEffect(() => {
         setRandonColor(getRandomColor())

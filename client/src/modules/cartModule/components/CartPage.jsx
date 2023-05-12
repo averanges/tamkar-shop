@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 
 const CartPage = () => {
     const allCardData = useSelector(state => state.user.allCardData)
-    const {data, error, isLoading} = useGetAddedCardQuery(allCardData)
+    const {data} = useGetAddedCardQuery(allCardData)
     const [randomColor, setRandonColor] = useState('#FFEDB4')
     useEffect(() => {
         setRandonColor(getRandomColor())

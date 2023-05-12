@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useAddNewItemMutation } from '../../../services/adminApiQuery'
 
 const DashboardAddItem = () => {
-    const [mutate, {isLoading}] = useAddNewItemMutation()
+    const [mutate] = useAddNewItemMutation()
     const [checkbox, setCheckbox] = useState({
         isNewItem: false, 
         isSale: false

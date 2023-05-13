@@ -14,11 +14,8 @@ const app = express()
 app.use(passport.initialize())
 
 app.use(cors({
-    origin: 'https://tamkar-beauty.vercel.app',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    exposedHeaders: ['Content-Type', 'Authorization'],
+    origin: process.env.CORS_ORIGIN,
+    credentials: true
   }));
 app.use(express.json())
 

@@ -14,7 +14,7 @@ const app = express()
 app.use(passport.initialize())
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: 'https://tamkar-beauty.netlify.app',
     credentials: true
   }));
 app.use(express.json())

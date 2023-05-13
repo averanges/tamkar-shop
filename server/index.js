@@ -14,7 +14,7 @@ const app = express()
 app.use(passport.initialize())
 
 app.use(cors({
-    origin: 'https://tamkar-beauty.vercel.app/',
+    origin: 'https://tamkar-beauty.vercel.app',
     credentials: true
 }))
 app.use(express.json())

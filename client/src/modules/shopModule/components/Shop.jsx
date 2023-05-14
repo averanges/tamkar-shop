@@ -39,7 +39,7 @@ const Shop = () => {
     },[categoryClicked])
   return (
     <>
-    { isLoading ? <ClipLoader/> :
+    { isLoading ? <div className='w-screen h-screen flex justify-center items-center'><ClipLoader/></div>:
         (<div className={`flex flex-col h-full w-full justify-center items-center md:gap-10 mt-20 
         duration-1000 ${imagesLoaded ? 'opacity-100' : 'opacity-0'}`}>
             <div className='fixed md:hidden w-full top-20 z-10 bg-white shadow-sm'>

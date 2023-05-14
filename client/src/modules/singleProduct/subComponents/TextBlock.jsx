@@ -19,7 +19,7 @@ const TextBlock = ({data, id}) => {
                 </p>
             </div>
             <div className='flex justify-center w-full md:justify-start'>
-                <h2 className={`text-4xl duration-1000 ${data?.title} ? 'opacity-100' : 'opacity-0'}`}>
+                <h2 className={`text-2xl md:text-4xl duration-1000 ${data?.title} ? 'opacity-100' : 'opacity-0'}`}>
                     {data?.title}
                 </h2>
             </div>
@@ -41,9 +41,9 @@ const TextBlock = ({data, id}) => {
             </div>
         </div>
         <div className='flex gap-8 items-center'>
-            {data?.oldPrice && <h3 className='text-4xl text-new-pink'>{`${Math.ceil(((data?.oldPrice-data?.price)/data?.oldPrice)*100)}%`}</h3>}
-            <h3 className='text-4xl'>{`${Number.isInteger(data?.price) ? data?.price : data?.price + '0'}$`}</h3>
-            {data?.oldPrice && <span className='text-2xl line-through text-gray-400'>{`${data?.oldPrice}$`}</span>}
+            {data?.oldPrice && <h3 className='text-2xl md:text-4xl text-new-pink'>{`${Math.ceil(((data?.oldPrice-data?.price)/data?.oldPrice)*100)}%`}</h3>}
+            <h3 className='text-2xl md:text-4xl'>{`${Number.isInteger(data?.price) ? data?.price : data?.price + '0'}$`}</h3>
+            {data?.oldPrice && <span className='text-lg md:text-2xl line-through text-gray-400'>{`${data?.oldPrice}$`}</span>}
             <button onClick={() => dispatch(addToCard(fecthCardId))}
             className='bg-new-pink rounded-full text-white w-full md:w-32 h-14 text-sm hover:bg-black duration-300'>ADD TO CART</button>
         </div>

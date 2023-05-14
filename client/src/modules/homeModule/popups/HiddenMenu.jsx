@@ -11,7 +11,7 @@ const HiddenMenu = () => {
     const navLinks = useNavLinks()
   return (
     <div className={` ${openLayer ? 'flex justify-start bg-[rgba(0,0,0,0.6)] fixed z-20 w-full h-full' : 'hidden'} `}>
-        <div className={`bg-black text-white h-full w-72 lg:w-96 duration-300 ease-linear gap-10 flex flex-col items-center ${move ? 'translate-x-0' : '-translate-x-[100%]'}`}>
+        <div className={`bg-white text-black h-full w-72 lg:w-96 duration-300 ease-linear gap-10 flex flex-col items-center ${move ? 'translate-x-0' : '-translate-x-[100%]'}`}>
             <div className='bg-new-pink w-full flex justify-between h-16 text-white items-center cursor-pointer px-5 hover:bg-black duration-300'
             onClick={() => dispatch(openHiddenMenu(false))}
             >

@@ -61,7 +61,8 @@ const handleAddToCardPopup = () => {
                     <h3 className='text-lg'>{`${price}$`}</h3>
                     {oldPrice && <span className='text-sm line-through text-gray-400'>{`${oldPrice}$`}</span>}
                 </div>
-                <div className='md:hidden w-full flex justify-center bg-new-pink text-white cursor-pointer h-10 items-center'>
+                <div onClick={() => handleAddToCardPopup()}
+                className='md:hidden w-full flex justify-center bg-new-pink text-white cursor-pointer h-10 items-center'>
                     <h5>ADD TO CARD</h5>
                 </div>
         </div>

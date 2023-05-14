@@ -22,7 +22,7 @@ const HiddenMenu = () => {
                     </svg>
                 </span>
             </div>
-            <div className='flex flex-col justify-start w-full pl-5 gap-5 text-lg'>
+            <div className='flex flex-col justify-start w-full pl-5 gap-10 text-lg '>
                 {navLinks}
             </div>
         </div>

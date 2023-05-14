@@ -16,7 +16,7 @@ const CardSmallData = ({data}) => {
               <div className='flex flex-col gap-2'>
                <Link to={`/shop/${linkToItem}/${linkTitle}`} onClick={() => dispatch(chooseToOpenProductId(data?._id))}
                className='text-md hover:text-new-pink cursor-pointer duration-500'>{data?.title}</Link>
-              <div className='flex justify-around items-center text-sm'>
+              <div className='flex justify-around items-center text-sm gap-2'>
               <div className='flex justify-center items-center border-[1px] border-gray-200 rounded-lg gap-4'>
                 <span onClick={() => dispatch(changeAddToCardAmount({id: data._id, type: 'minus'}))}
                 className='border-r-[1px] border-gray-300 text-2xl px-3 cursor-pointer '>-</span>
@@ -24,11 +24,11 @@ const CardSmallData = ({data}) => {
                 <span onClick={() => dispatch(changeAddToCardAmount({id: data._id, type: 'plus'}))}
                 className='border-l-[1px] border-gray-300 text-lg cursor-pointer px-3'>+</span>
             </div>
-            <p className='text-2xl font-semibold'>${data.price}0</p> 
+            <p className='text-base md:text-2xl font-semibold'>${data.price}0</p> 
             </div>
           </div>
         <span onClick={() => dispatch(changeAddToCardAmount({id: data._id, type: 'delete'}))}
-        className='text-2xl cursor-pointer hover:text-new-pink mr-3 border-[1px] border-gray-200 rounded-full w-10 h-10 flex justify-center items-center'>x</span>
+        className='text-2xl cursor-pointer hover:text-new-pink mr-3 border-[1px] border-gray-200 rounded-full min-w-[2rem] min-h-[1rem] flex justify-center items-center'>x</span>
      </div>
   )
 }

@@ -3,7 +3,7 @@ import { dataCategories } from '../consts/dataCategories'
 import { Link } from 'react-router-dom'
 
 const categories = dataCategories.map((el, idx) => 
-    <Link to='/shop/hair-care'
+    <Link to='/shop/all-items'
     className='cursor-pointer lg:flex-1 duration-500 rounded-xl h-56 hover:shadow-xl flex flex-col items-center justify-around group/edit' style={{backgroundColor: el.color}} key={idx}>
         <div className='h-fit w-full group-hover/edit:animate-slide-in flex justify-center items-center'> 
             <img src={el.img} alt="" />

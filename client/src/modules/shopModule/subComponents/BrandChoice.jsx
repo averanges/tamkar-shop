@@ -19,7 +19,7 @@ const BrandChoice = ({data, setChosenBrands, setBrandClicked, brandClicked, chos
         }
         }, [chosenBrands])
   return (
-    <div className='w-full flex justify-between'>
+    <div className='w-full flex justify-between gap-5'>
         <input type="checkbox" name="" id={data[0]} 
         checked={checked} onChange={() => handleBrandChoice()}/>
         <label htmlFor={data[0]}

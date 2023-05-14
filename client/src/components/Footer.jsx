@@ -7,19 +7,19 @@ const arr = ['Blog','Privacy','My Account','About us','Login','FAQs', 'Contact',
 const Footer = () => {
   return (
     <div className='bg-home-gray w-full h-96 mt-20 flex justify-around items-center gap-10 px-10 text-gray-600  '>
-        <div className='flex-1 gap-10 flex flex-col ml-16 hidden md:block'>
+        <div className='flex-1 gap-10 flex-col ml-16 hidden md:block'>
             <img src={Logo} alt="" className='w-4/6' />
             <p className='hidden md:inline md:text-sm lg:text-base'>The No.1 Digital Destination for
                 all things K-beauty - Shopping,
                 Lifestyles & Trends</p>
         </div>
-        <div className='flex-1 gap-10 flex flex-col ml-20'>
+        <div className='flex-1 gap-10 flex flex-col md:ml-20'>
             <h2 className='text-xl font-semibold text-black'>Information</h2>
             <div className='grid grid-cols-3 gap-5 text-sm md:text-base'>
                 {arr}
             </div>
         </div>
-        <div className='flex-1 gap-10 flex flex-col items-center'>
+        <div className='md:flex-1 gap-10 flex flex-col items-center'>
             <h2 className='text-xl font-semibold text-black'>Social info</h2>
             <div className='flex gap-5 mb-20'>
                 <div>

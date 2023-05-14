@@ -7,6 +7,7 @@ import BrandChoice from './BrandChoice'
 const Filter = ({category, allData, setChosenCategories, setChosenBrands,firstChoice,chosenCategories,setBrandClicked,
      setChosenPrice, isLoading, data, setValue, value, categoryClicked, setCategoryClicked, setGridImagesLoading,
     brandClicked, chosenBrands, chosenPrice}) => {
+
     let allCategories
     let allBrands
     const priceRange = allData?.map((el) => el.price).sort((a, b) => a - b)
@@ -151,7 +152,8 @@ const Filter = ({category, allData, setChosenCategories, setChosenBrands,firstCh
                     <div className='flex flex-col gap-5 px-3'>
                         {allCategories}
                     </div>  
-                </div>}
+                </div>
+                }
                 <div className='flex flex-col gap-7 border-[1px] shadow-inner border-gray-200 rounded-lg py-5'>
                     <div className='flex gap-3 items-center justify-center'>
                         <h3 className='text-2xl'>BRANDS</h3>

@@ -26,7 +26,7 @@ const HeroSlide = () => {
                     <h2 ref={navChangeRef} className={`text-3xl md:text-5xl lg:text-7xl font-medium absolute font-heroH2 tracking-widest top-[10%] md:top-[25%] lg:top-[40%] xl:top-[45%] ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.3s]`}>skin care</h2>
                     <p className={`text-sm md:text-base lg:text-lg mt-5 ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.4s]`}>
                     Get the best skincare products and unlock a flawless complexion with our premium collection.</p>
-                    <Link to='/shop/hair-care'
+                    <Link to='/shop/all-items'
                     className={`flex justify-center lg:py-2 border-2 border-solid border-black rounded-full w-24 lg:w-48  bg-white hover:bg-bs-orange  ${homeImgObserved ? 'translate-x-0 opacity-100' : 'translate-y-40 opacity-0'} duration-[1.3s] delay-[1.5s] }`}>
                         Buy now</Link>
                 </div>

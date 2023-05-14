@@ -22,8 +22,8 @@ const CategoryChoice = ({setChosenCategories, name, setCategoryClicked,
     }, [chosenCategories])
   return (
     <div className='cursor-pointer hover:text-new-pink flex gap-3'>
-        <input type="checkbox" name="" id={name} className='cursor-pointer' 
-        checked={checked} onChange={() => handleCategoryChoice()}/>
+        {name && <input type="checkbox" name="" id={name} className='cursor-pointer' 
+        checked={checked} onChange={() => handleCategoryChoice()}/>}
         <label htmlFor={name} className='cursor-pointer'>{name}</label>
     </div>
   )

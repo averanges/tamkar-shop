@@ -9,7 +9,7 @@ Check out the live demo: [Tamkar Shop](https://add.pics/images/2024/01/13/Tamkar
 
 ## Screenshots
 
-![Main Section] (https://imgbly.com/ib/p4qHa9VQCV)
+![Main Section] [(https://add.pics/images/2024/01/13/TamkarMain.png)]
 
 ## Introduction
 

@@ -5,7 +5,7 @@ This project includes essential features such as user authentication, product fi
 
 ## Demo
 
-Check out the live demo: [Tamkar Shop][(https://tamkar-beauty.vercel.app/)](https://add.pics/images/2024/01/13/TamkarMain.png)
+Check out the live demo: [Tamkar Shop](https://add.pics/images/2024/01/13/TamkarMain.png)
 
 ## Screenshots
 

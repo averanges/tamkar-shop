@@ -9,7 +9,7 @@ Check out the live demo: [Tamkar Shop](https://tamkar-beauty.vercel.app/)
 
 ## Screenshots
 
-![Main Section][(https://add.pics/images/2024/01/10/projects.png)](https://imgbly.com/ib/p4qHa9VQCV)
+![Main Section] (https://imgbly.com/ib/p4qHa9VQCV)
 
 ## Introduction
 
